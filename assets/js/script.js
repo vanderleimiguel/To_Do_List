@@ -36,3 +36,14 @@ addBtn.addEventListener('click', function () {
     })
   }
 }) //termina a função addBtn
+
+//check na tarefa
+const list = document.querySelector('ul') //capturei a lista inteira para pegar a ul toda
+
+list.addEventListener('click', event => {
+  //dentro da minha target tudo o que tiver o nome node==LI
+  if (event.target.nodeName === 'LI') {
+    //estrutura pronta do JS: event.target.nodeName == "CHECKBOX"
+    event.target.classList.toggle('checked') //adiciona o checked na li e o toggle desarma o checked
+  }
+})

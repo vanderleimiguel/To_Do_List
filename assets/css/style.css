@@ -66,6 +66,7 @@ ul li{
     background-color: rgb(119, 195, 117);/*segunda cor de fundo inserida das tarefas*/
     position: relative; /*posicao relativa ao de cima*/
     font-size: 18px;
+    color: black
 }
 
 ul li:nth-child(odd){/*listra zebrada*/
